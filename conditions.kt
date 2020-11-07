@@ -1,21 +1,24 @@
+import java.util.Scanner
+
 fun main()
 {
-    val num1 = readLine()!!
-    val num2 = readLine()!!
 
-    println("$num1")
-    println("$num2")
+    println("Insert two numbers: ")
 
-    /*
-    if num1.compareTo(num2)
+    // reader variable to get user input from stdin
+    val reader = Scanner(System.`in`)
+
+    var num1 = reader.nextInt()
+    var num2 = reader.nextInt()
+
+    // validation which inserted number is higher
+    if (num1 > num2)
     {
         println("num1 bigger than num2")
-    } else if (num2 > num1)
-    {
+    } else if (num2 > num1) {
         println("num2 bigger than num1")
     } else
     {
         println("num1 equals to num2")
     }
-    */
 }
